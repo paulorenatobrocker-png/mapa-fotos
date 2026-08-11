@@ -1,0 +1,3893 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_57bc3ad244235ff0060381a59d83a880 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_57bc3ad244235ff0060381a59d83a880" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_57bc3ad244235ff0060381a59d83a880 = L.map(
+                "map_57bc3ad244235ff0060381a59d83a880",
+                {
+                    center: [-30.145, -51.129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 17,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_92fab5c03a5410018c157b591f27a411 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_92fab5c03a5410018c157b591f27a411.addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var marker_bed8a12afea19dcf73accc0ef0e8134f = L.marker(
+                [-30.14258, -51.12664],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_da5f6f33a36af48a2abd1c34d36cafd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60f184782b06bf0d0aa10fe8cb80beac = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_55b98a75f95a10d49141000e28a946b0 = $(`<div id="html_55b98a75f95a10d49141000e28a946b0" style="width: 100.0%; height: 100.0%;">     <h3>photo_10_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_10_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:28<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 3405 - Restinga - RS,     </div>`)[0];
+                popup_60f184782b06bf0d0aa10fe8cb80beac.setContent(html_55b98a75f95a10d49141000e28a946b0);
+            
+        
+
+        marker_bed8a12afea19dcf73accc0ef0e8134f.bindPopup(popup_60f184782b06bf0d0aa10fe8cb80beac)
+        ;
+
+        
+    
+    
+            marker_bed8a12afea19dcf73accc0ef0e8134f.bindTooltip(
+                `<div>
+                     photo_10_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bed8a12afea19dcf73accc0ef0e8134f.setIcon(icon_da5f6f33a36af48a2abd1c34d36cafd4);
+            
+    
+            var marker_3d5439c53cac079169f468bf3b1b83d7 = L.marker(
+                [-30.14253, -51.12644],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_9d5e68a129144095f9ecf5a04175b407 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8ca5dc05196149beeeb49ec166f6866 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_e0db704156f64a985386a0640cb34289 = $(`<div id="html_e0db704156f64a985386a0640cb34289" style="width: 100.0%; height: 100.0%;">     <h3>photo_11_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_11_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:28<br><br>      <b>Endereço:</b><br>      Estr. Jodo Antonio da Silveira, 3409 - Restinga - RS, \     </div>`)[0];
+                popup_c8ca5dc05196149beeeb49ec166f6866.setContent(html_e0db704156f64a985386a0640cb34289);
+            
+        
+
+        marker_3d5439c53cac079169f468bf3b1b83d7.bindPopup(popup_c8ca5dc05196149beeeb49ec166f6866)
+        ;
+
+        
+    
+    
+            marker_3d5439c53cac079169f468bf3b1b83d7.bindTooltip(
+                `<div>
+                     photo_11_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d5439c53cac079169f468bf3b1b83d7.setIcon(icon_9d5e68a129144095f9ecf5a04175b407);
+            
+    
+            var marker_9522ca1618a90c0d438760c9d24f9d22 = L.marker(
+                [-30.1427, -51.12518],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_232e56a823e72b0c8d720e2c4409c70d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_130c8e6b3a9433a34f5756a678266093 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_9c3252067ef513647f7d640dc559eded = $(`<div id="html_9c3252067ef513647f7d640dc559eded" style="width: 100.0%; height: 100.0%;">     <h3>photo_12_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_12_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:28<br><br>      <b>Endereço:</b><br>      Avenida Joao Anténio Silveira, 4100 - Pitinga- RS, 91790-400 NE     </div>`)[0];
+                popup_130c8e6b3a9433a34f5756a678266093.setContent(html_9c3252067ef513647f7d640dc559eded);
+            
+        
+
+        marker_9522ca1618a90c0d438760c9d24f9d22.bindPopup(popup_130c8e6b3a9433a34f5756a678266093)
+        ;
+
+        
+    
+    
+            marker_9522ca1618a90c0d438760c9d24f9d22.bindTooltip(
+                `<div>
+                     photo_12_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9522ca1618a90c0d438760c9d24f9d22.setIcon(icon_232e56a823e72b0c8d720e2c4409c70d);
+            
+    
+            var marker_f6a6997c6aa543b47e3213fe10da33be = L.marker(
+                [-30.14286, -51.1248],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_c9b20b3c50929a9a96843c7612d63248 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d97d9abddf75e83752ba08bfb3f558b = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_81d06247eabb4b0fc6cf0da89a3617f8 = $(`<div id="html_81d06247eabb4b0fc6cf0da89a3617f8" style="width: 100.0%; height: 100.0%;">     <h3>photo_13_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_13_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:27<br><br>      <b>Endereço:</b><br>      Avenida Jodo Anténio Silveira, 4100 - Pitinga-RS,91790-400 NE     </div>`)[0];
+                popup_2d97d9abddf75e83752ba08bfb3f558b.setContent(html_81d06247eabb4b0fc6cf0da89a3617f8);
+            
+        
+
+        marker_f6a6997c6aa543b47e3213fe10da33be.bindPopup(popup_2d97d9abddf75e83752ba08bfb3f558b)
+        ;
+
+        
+    
+    
+            marker_f6a6997c6aa543b47e3213fe10da33be.bindTooltip(
+                `<div>
+                     photo_13_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f6a6997c6aa543b47e3213fe10da33be.setIcon(icon_c9b20b3c50929a9a96843c7612d63248);
+            
+    
+            var marker_94704795ee9ceb8413d31962b973be3a = L.marker(
+                [-30.14299, -51.12454],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_a3f37d8177a1a60c96a33313c6c8db58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f802a7c04c80b52d8a7b3e7cdff06fb = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_2586b40dbc8b0f7b86c70cd9ef98461c = $(`<div id="html_2586b40dbc8b0f7b86c70cd9ef98461c" style="width: 100.0%; height: 100.0%;">     <h3>photo_14_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_14_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:27<br><br>      <b>Endereço:</b><br>      Joao Antonio Silveira 4065 - Pitinga - RS, 91790-400) NE     </div>`)[0];
+                popup_9f802a7c04c80b52d8a7b3e7cdff06fb.setContent(html_2586b40dbc8b0f7b86c70cd9ef98461c);
+            
+        
+
+        marker_94704795ee9ceb8413d31962b973be3a.bindPopup(popup_9f802a7c04c80b52d8a7b3e7cdff06fb)
+        ;
+
+        
+    
+    
+            marker_94704795ee9ceb8413d31962b973be3a.bindTooltip(
+                `<div>
+                     photo_14_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_94704795ee9ceb8413d31962b973be3a.setIcon(icon_a3f37d8177a1a60c96a33313c6c8db58);
+            
+    
+            var marker_8657f881e832af37583ea9a3ef9028cf = L.marker(
+                [-30.14312, -51.12406],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_267c10850d18078e9de2d2f03ef22ac4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbf5f442f4aaea068fc75c34ece5f465 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_4854ed470ed2821dcbcd6c45807a2eb3 = $(`<div id="html_4854ed470ed2821dcbcd6c45807a2eb3" style="width: 100.0%; height: 100.0%;">     <h3>photo_15_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_15_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:27<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 4761 -Pitinga-RS,91796-119 NE     </div>`)[0];
+                popup_dbf5f442f4aaea068fc75c34ece5f465.setContent(html_4854ed470ed2821dcbcd6c45807a2eb3);
+            
+        
+
+        marker_8657f881e832af37583ea9a3ef9028cf.bindPopup(popup_dbf5f442f4aaea068fc75c34ece5f465)
+        ;
+
+        
+    
+    
+            marker_8657f881e832af37583ea9a3ef9028cf.bindTooltip(
+                `<div>
+                     photo_15_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8657f881e832af37583ea9a3ef9028cf.setIcon(icon_267c10850d18078e9de2d2f03ef22ac4);
+            
+    
+            var marker_d8865aab1149aa07e5406738177b793b = L.marker(
+                [-30.14314, -51.12387],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_2be8b2380386e1f696c1dc814c8e4e7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96d56bb6c77e6e0b749ea0437b60bd53 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_34d7a67bbf930b1d0f6abce975039557 = $(`<div id="html_34d7a67bbf930b1d0f6abce975039557" style="width: 100.0%; height: 100.0%;">     <h3>photo_16_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_16_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:27<br><br>      <b>Endereço:</b><br>      Estr. Joao / Anténio da Silveira, 4761 , 91796-119     </div>`)[0];
+                popup_96d56bb6c77e6e0b749ea0437b60bd53.setContent(html_34d7a67bbf930b1d0f6abce975039557);
+            
+        
+
+        marker_d8865aab1149aa07e5406738177b793b.bindPopup(popup_96d56bb6c77e6e0b749ea0437b60bd53)
+        ;
+
+        
+    
+    
+            marker_d8865aab1149aa07e5406738177b793b.bindTooltip(
+                `<div>
+                     photo_16_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d8865aab1149aa07e5406738177b793b.setIcon(icon_2be8b2380386e1f696c1dc814c8e4e7e);
+            
+    
+            var marker_e92547b8dc69c8f30792ced962eb4e0d = L.marker(
+                [-30.14314, -51.12358],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_967cc616625b7c2651ef256ff7a60258 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1717c439ac5875746860fa46002a4082 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_f85ee423ff9bf97bb20d4800c4908c2f = $(`<div id="html_f85ee423ff9bf97bb20d4800c4908c2f" style="width: 100.0%; height: 100.0%;">     <h3>photo_17_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_17_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:27<br><br>      <b>Endereço:</b><br>      Estr. Joao Anténio da Silveira, 414 - Restinga - RS,     </div>`)[0];
+                popup_1717c439ac5875746860fa46002a4082.setContent(html_f85ee423ff9bf97bb20d4800c4908c2f);
+            
+        
+
+        marker_e92547b8dc69c8f30792ced962eb4e0d.bindPopup(popup_1717c439ac5875746860fa46002a4082)
+        ;
+
+        
+    
+    
+            marker_e92547b8dc69c8f30792ced962eb4e0d.bindTooltip(
+                `<div>
+                     photo_17_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e92547b8dc69c8f30792ced962eb4e0d.setIcon(icon_967cc616625b7c2651ef256ff7a60258);
+            
+    
+            var marker_2141358e4ed17a3cea97f06008e12501 = L.marker(
+                [-30.14312, -51.12338],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_506a62fb7be8937b7b6aec32e6ada5da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df0d9e8e27f38fe2b26f6866c806866c = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_7069f329ad1a47aa286f7fad6748ae51 = $(`<div id="html_7069f329ad1a47aa286f7fad6748ae51" style="width: 100.0%; height: 100.0%;">     <h3>photo_18_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_18_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:27<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 414 - Restinga - RS,     </div>`)[0];
+                popup_df0d9e8e27f38fe2b26f6866c806866c.setContent(html_7069f329ad1a47aa286f7fad6748ae51);
+            
+        
+
+        marker_2141358e4ed17a3cea97f06008e12501.bindPopup(popup_df0d9e8e27f38fe2b26f6866c806866c)
+        ;
+
+        
+    
+    
+            marker_2141358e4ed17a3cea97f06008e12501.bindTooltip(
+                `<div>
+                     photo_18_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2141358e4ed17a3cea97f06008e12501.setIcon(icon_506a62fb7be8937b7b6aec32e6ada5da);
+            
+    
+            var marker_75ba8c322f3a3c2d4ce52efd640c3314 = L.marker(
+                [-30.14313, -51.12258],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_106f4a38f5a2b24cab5c1f7c9dc9df00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a321b7b201f6b5f7a680f922018ed78 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_f40f4eafeefc73a223c59d2afbc4ca20 = $(`<div id="html_f40f4eafeefc73a223c59d2afbc4ca20" style="width: 100.0%; height: 100.0%;">     <h3>photo_19_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_19_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:27<br><br>      <b>Endereço:</b><br>      Avenida Joao Antonio Silveira, 4300 - Pitinga     </div>`)[0];
+                popup_0a321b7b201f6b5f7a680f922018ed78.setContent(html_f40f4eafeefc73a223c59d2afbc4ca20);
+            
+        
+
+        marker_75ba8c322f3a3c2d4ce52efd640c3314.bindPopup(popup_0a321b7b201f6b5f7a680f922018ed78)
+        ;
+
+        
+    
+    
+            marker_75ba8c322f3a3c2d4ce52efd640c3314.bindTooltip(
+                `<div>
+                     photo_19_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75ba8c322f3a3c2d4ce52efd640c3314.setIcon(icon_106f4a38f5a2b24cab5c1f7c9dc9df00);
+            
+    
+            var marker_c2c390f9d04ac075802784e0d3f7a168 = L.marker(
+                [-30.14522, -51.12915],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_50c8796683b5f3a06be2445ad236b076 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b73317e9ccccfcc1ca538fa5695a4ef = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_c3c1b7bedb12638f51626b2ac14f687f = $(`<div id="html_c3c1b7bedb12638f51626b2ac14f687f" style="width: 100.0%; height: 100.0%;">     <h3>photo_1_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_1_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:30<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 3107 - Restinga - RS,     </div>`)[0];
+                popup_5b73317e9ccccfcc1ca538fa5695a4ef.setContent(html_c3c1b7bedb12638f51626b2ac14f687f);
+            
+        
+
+        marker_c2c390f9d04ac075802784e0d3f7a168.bindPopup(popup_5b73317e9ccccfcc1ca538fa5695a4ef)
+        ;
+
+        
+    
+    
+            marker_c2c390f9d04ac075802784e0d3f7a168.bindTooltip(
+                `<div>
+                     photo_1_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c2c390f9d04ac075802784e0d3f7a168.setIcon(icon_50c8796683b5f3a06be2445ad236b076);
+            
+    
+            var marker_bcec5b0d60440e25ea95db03ab3313ec = L.marker(
+                [-30.1432, -51.12118],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_903602f7a0ea69656a0937fbc1d73dfc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72bc8ff1bafebf481fd58ca8e5066796 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_80315f8a314b9ffc9caa4b8cd9d5d1ad = $(`<div id="html_80315f8a314b9ffc9caa4b8cd9d5d1ad" style="width: 100.0%; height: 100.0%;">     <h3>photo_20_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_20_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:26<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 4119 - Restinga - RS, 91796-101 E     </div>`)[0];
+                popup_72bc8ff1bafebf481fd58ca8e5066796.setContent(html_80315f8a314b9ffc9caa4b8cd9d5d1ad);
+            
+        
+
+        marker_bcec5b0d60440e25ea95db03ab3313ec.bindPopup(popup_72bc8ff1bafebf481fd58ca8e5066796)
+        ;
+
+        
+    
+    
+            marker_bcec5b0d60440e25ea95db03ab3313ec.bindTooltip(
+                `<div>
+                     photo_20_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bcec5b0d60440e25ea95db03ab3313ec.setIcon(icon_903602f7a0ea69656a0937fbc1d73dfc);
+            
+    
+            var marker_d0f9226b4653d1e52a290c8ce14a7a64 = L.marker(
+                [-30.14337, -51.12036],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_b1fa8475eaa560869411ac55b2087e6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a4b402130194cf4025e70990deec483 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_f3892fb0801688b0431d21b1eac43f53 = $(`<div id="html_f3892fb0801688b0431d21b1eac43f53" style="width: 100.0%; height: 100.0%;">     <h3>photo_21_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_21_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:26<br><br>      <b>Endereço:</b><br>      Estr. Joao Anténio da Silveira, 4235 - Pitinga - RS, 91796-000     </div>`)[0];
+                popup_6a4b402130194cf4025e70990deec483.setContent(html_f3892fb0801688b0431d21b1eac43f53);
+            
+        
+
+        marker_d0f9226b4653d1e52a290c8ce14a7a64.bindPopup(popup_6a4b402130194cf4025e70990deec483)
+        ;
+
+        
+    
+    
+            marker_d0f9226b4653d1e52a290c8ce14a7a64.bindTooltip(
+                `<div>
+                     photo_21_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0f9226b4653d1e52a290c8ce14a7a64.setIcon(icon_b1fa8475eaa560869411ac55b2087e6e);
+            
+    
+            var marker_52ad9df78bd5276ab0e4aeebc7afb503 = L.marker(
+                [-30.14372, -51.11929],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_f9c2a69fe2ce5b914bca73a9eb130e82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89a30ab20699ff9e47efcaf705cf366e = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_819777adf2a967f5414a26584861f6f1 = $(`<div id="html_819777adf2a967f5414a26584861f6f1" style="width: 100.0%; height: 100.0%;">     <h3>photo_22_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_22_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:25<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 4535 - Restinga - RS,     </div>`)[0];
+                popup_89a30ab20699ff9e47efcaf705cf366e.setContent(html_819777adf2a967f5414a26584861f6f1);
+            
+        
+
+        marker_52ad9df78bd5276ab0e4aeebc7afb503.bindPopup(popup_89a30ab20699ff9e47efcaf705cf366e)
+        ;
+
+        
+    
+    
+            marker_52ad9df78bd5276ab0e4aeebc7afb503.bindTooltip(
+                `<div>
+                     photo_22_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_52ad9df78bd5276ab0e4aeebc7afb503.setIcon(icon_f9c2a69fe2ce5b914bca73a9eb130e82);
+            
+    
+            var marker_1217e4a798655b40fa94bb103fa991a2 = L.marker(
+                [-30.14371, -51.11892],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_6f41024557aa60501d9d8bc65d35601b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75e83990805674accbdad0cbd4591304 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_771f98a819cde517a884103676ecd418 = $(`<div id="html_771f98a819cde517a884103676ecd418" style="width: 100.0%; height: 100.0%;">     <h3>photo_23_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_23_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:25<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 4760 - Restinga - RS,     </div>`)[0];
+                popup_75e83990805674accbdad0cbd4591304.setContent(html_771f98a819cde517a884103676ecd418);
+            
+        
+
+        marker_1217e4a798655b40fa94bb103fa991a2.bindPopup(popup_75e83990805674accbdad0cbd4591304)
+        ;
+
+        
+    
+    
+            marker_1217e4a798655b40fa94bb103fa991a2.bindTooltip(
+                `<div>
+                     photo_23_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1217e4a798655b40fa94bb103fa991a2.setIcon(icon_6f41024557aa60501d9d8bc65d35601b);
+            
+    
+            var marker_bb87c9d0d41c69c4971571321512c3f8 = L.marker(
+                [-30.14361, -51.11848],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_dc1c61dc4a736c53ccdd66e3b8f9b78a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dee4f0fcaeb84508656e1fed648e7b43 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_d577e0a2d4c4eb346b426d4ea29e3d3d = $(`<div id="html_d577e0a2d4c4eb346b426d4ea29e3d3d" style="width: 100.0%; height: 100.0%;">     <h3>photo_24_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_24_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:25<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 300 - Restinga - RS,     </div>`)[0];
+                popup_dee4f0fcaeb84508656e1fed648e7b43.setContent(html_d577e0a2d4c4eb346b426d4ea29e3d3d);
+            
+        
+
+        marker_bb87c9d0d41c69c4971571321512c3f8.bindPopup(popup_dee4f0fcaeb84508656e1fed648e7b43)
+        ;
+
+        
+    
+    
+            marker_bb87c9d0d41c69c4971571321512c3f8.bindTooltip(
+                `<div>
+                     photo_24_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bb87c9d0d41c69c4971571321512c3f8.setIcon(icon_dc1c61dc4a736c53ccdd66e3b8f9b78a);
+            
+    
+            var marker_52d0cfa48df6a42b01a865de3256029b = L.marker(
+                [-30.14354, -51.11818],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_e927a994feb3ea0ccba794386dccdf4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35fd2b9673c76fe3b1bf184a3d836edf = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_4b70a3c2dbbfa3f640e38b8721033699 = $(`<div id="html_4b70a3c2dbbfa3f640e38b8721033699" style="width: 100.0%; height: 100.0%;">     <h3>photo_25_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_25_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:25<br><br>      <b>Endereço:</b><br>      Avenida Joao Anténio Silveira, 4600 - Pitinga - RS, 91790-400 E     </div>`)[0];
+                popup_35fd2b9673c76fe3b1bf184a3d836edf.setContent(html_4b70a3c2dbbfa3f640e38b8721033699);
+            
+        
+
+        marker_52d0cfa48df6a42b01a865de3256029b.bindPopup(popup_35fd2b9673c76fe3b1bf184a3d836edf)
+        ;
+
+        
+    
+    
+            marker_52d0cfa48df6a42b01a865de3256029b.bindTooltip(
+                `<div>
+                     photo_25_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_52d0cfa48df6a42b01a865de3256029b.setIcon(icon_e927a994feb3ea0ccba794386dccdf4b);
+            
+    
+            var marker_f24297703b385d13517b5416db8426d7 = L.marker(
+                [-30.14341, -51.11758],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_6af3d318024a468ae4efad5cf8736aad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a995d212a0d44ca296c6f3a3e0ed7b77 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_227a217e37a82a40019c4b697e5d3eb7 = $(`<div id="html_227a217e37a82a40019c4b697e5d3eb7" style="width: 100.0%; height: 100.0%;">     <h3>photo_26_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_26_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:25<br><br>      <b>Endereço:</b><br>      Joao Antonio Silveira 4850 - Pitinga - RS, 91790-400 NE     </div>`)[0];
+                popup_a995d212a0d44ca296c6f3a3e0ed7b77.setContent(html_227a217e37a82a40019c4b697e5d3eb7);
+            
+        
+
+        marker_f24297703b385d13517b5416db8426d7.bindPopup(popup_a995d212a0d44ca296c6f3a3e0ed7b77)
+        ;
+
+        
+    
+    
+            marker_f24297703b385d13517b5416db8426d7.bindTooltip(
+                `<div>
+                     photo_26_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f24297703b385d13517b5416db8426d7.setIcon(icon_6af3d318024a468ae4efad5cf8736aad);
+            
+    
+            var marker_fb9d03a062f700613caf3081201225f1 = L.marker(
+                [-30.14334, -51.11719],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_536a0c956f2895448516deb4b616aa21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_effa2b844631dd3a2e17ae3fac81e4a1 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_25f9050c392488343abe9e27060daef0 = $(`<div id="html_25f9050c392488343abe9e27060daef0" style="width: 100.0%; height: 100.0%;">     <h3>photo_27_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_27_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:24<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 4931 - Pitinga-RS,91796-119 NE     </div>`)[0];
+                popup_effa2b844631dd3a2e17ae3fac81e4a1.setContent(html_25f9050c392488343abe9e27060daef0);
+            
+        
+
+        marker_fb9d03a062f700613caf3081201225f1.bindPopup(popup_effa2b844631dd3a2e17ae3fac81e4a1)
+        ;
+
+        
+    
+    
+            marker_fb9d03a062f700613caf3081201225f1.bindTooltip(
+                `<div>
+                     photo_27_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb9d03a062f700613caf3081201225f1.setIcon(icon_536a0c956f2895448516deb4b616aa21);
+            
+    
+            var marker_cfef207163f3bf04a07306b17adf888f = L.marker(
+                [-30.14333, -51.11694],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_184a38805013355f1339d5802bd1e9e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d22a6c2f5409455de7eb58a701919634 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_1603d4a4c310a5916acc1358144c769a = $(`<div id="html_1603d4a4c310a5916acc1358144c769a" style="width: 100.0%; height: 100.0%;">     <h3>photo_28_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_28_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:24<br><br>      <b>Endereço:</b><br>      Estr. Joao Anténio da Silveira, 4931 - Pitinga - RS, 91796-119 SE     </div>`)[0];
+                popup_d22a6c2f5409455de7eb58a701919634.setContent(html_1603d4a4c310a5916acc1358144c769a);
+            
+        
+
+        marker_cfef207163f3bf04a07306b17adf888f.bindPopup(popup_d22a6c2f5409455de7eb58a701919634)
+        ;
+
+        
+    
+    
+            marker_cfef207163f3bf04a07306b17adf888f.bindTooltip(
+                `<div>
+                     photo_28_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cfef207163f3bf04a07306b17adf888f.setIcon(icon_184a38805013355f1339d5802bd1e9e4);
+            
+    
+            var marker_4b776b99924e5a40974db47b144c8753 = L.marker(
+                [-30.14332, -51.11643],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_5a165883be36e56e929d1630bdf965d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0fabbdb039e47ddeb4c5ed50b291874 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_fedd5a61718547d1bb4e213922593a4f = $(`<div id="html_fedd5a61718547d1bb4e213922593a4f" style="width: 100.0%; height: 100.0%;">     <h3>photo_29_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_29_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:24<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 5005 - Restinga - RS SE     </div>`)[0];
+                popup_a0fabbdb039e47ddeb4c5ed50b291874.setContent(html_fedd5a61718547d1bb4e213922593a4f);
+            
+        
+
+        marker_4b776b99924e5a40974db47b144c8753.bindPopup(popup_a0fabbdb039e47ddeb4c5ed50b291874)
+        ;
+
+        
+    
+    
+            marker_4b776b99924e5a40974db47b144c8753.bindTooltip(
+                `<div>
+                     photo_29_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b776b99924e5a40974db47b144c8753.setIcon(icon_5a165883be36e56e929d1630bdf965d4);
+            
+    
+            var marker_f68773cde267f41ff87d64a7f8719fe6 = L.marker(
+                [-30.14345, -51.11603],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_eb73332a95826973550456a6bf0e983e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2db287bf7c83be21deb83fd0d175c5e = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_01071c8223af04f4a56b7ae73539b85b = $(`<div id="html_01071c8223af04f4a56b7ae73539b85b" style="width: 100.0%; height: 100.0%;">     <h3>photo_30_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_30_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:24<br><br>      <b>Endereço:</b><br>      Avenida Joao Anténio Silveira, 5056 - Pitinga - RS     </div>`)[0];
+                popup_d2db287bf7c83be21deb83fd0d175c5e.setContent(html_01071c8223af04f4a56b7ae73539b85b);
+            
+        
+
+        marker_f68773cde267f41ff87d64a7f8719fe6.bindPopup(popup_d2db287bf7c83be21deb83fd0d175c5e)
+        ;
+
+        
+    
+    
+            marker_f68773cde267f41ff87d64a7f8719fe6.bindTooltip(
+                `<div>
+                     photo_30_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f68773cde267f41ff87d64a7f8719fe6.setIcon(icon_eb73332a95826973550456a6bf0e983e);
+            
+    
+            var marker_07cb4053971b8e1797c2191a5898fb7d = L.marker(
+                [-30.14368, -51.11568],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_27b57bdd3a30cbd162b70cb749af683e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_282bfa7a255764419854629710621c98 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_666cacbf341e926e2f3a69aa9705c1f0 = $(`<div id="html_666cacbf341e926e2f3a69aa9705c1f0" style="width: 100.0%; height: 100.0%;">     <h3>photo_31_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_31_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:23<br><br>      <b>Endereço:</b><br>      Avenida Joao Anténio Silveira, 1204 - Pitinga - RS     </div>`)[0];
+                popup_282bfa7a255764419854629710621c98.setContent(html_666cacbf341e926e2f3a69aa9705c1f0);
+            
+        
+
+        marker_07cb4053971b8e1797c2191a5898fb7d.bindPopup(popup_282bfa7a255764419854629710621c98)
+        ;
+
+        
+    
+    
+            marker_07cb4053971b8e1797c2191a5898fb7d.bindTooltip(
+                `<div>
+                     photo_31_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_07cb4053971b8e1797c2191a5898fb7d.setIcon(icon_27b57bdd3a30cbd162b70cb749af683e);
+            
+    
+            var marker_751aa008a8fe6b3f74141bbb0d248245 = L.marker(
+                [-30.14392, -51.11544],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_8dc1a283339317e4b3773b0a488c0bb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24e4242ebc6db5ab4a6faedbae7d9b40 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_3e37e40ec2c2d0beae132a0cc4aa5632 = $(`<div id="html_3e37e40ec2c2d0beae132a0cc4aa5632" style="width: 100.0%; height: 100.0%;">     <h3>photo_32_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_32_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> <br>      <b>Hora:</b> <br><br>      <b>Endereço:</b><br>      Avenida Joao Anténio Silveira, 1256 - Pitinga - RS NE     </div>`)[0];
+                popup_24e4242ebc6db5ab4a6faedbae7d9b40.setContent(html_3e37e40ec2c2d0beae132a0cc4aa5632);
+            
+        
+
+        marker_751aa008a8fe6b3f74141bbb0d248245.bindPopup(popup_24e4242ebc6db5ab4a6faedbae7d9b40)
+        ;
+
+        
+    
+    
+            marker_751aa008a8fe6b3f74141bbb0d248245.bindTooltip(
+                `<div>
+                     photo_32_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_751aa008a8fe6b3f74141bbb0d248245.setIcon(icon_8dc1a283339317e4b3773b0a488c0bb2);
+            
+    
+            var marker_f1df6aa7025daf1224997ffef6f5324e = L.marker(
+                [-30.14416, -51.11514],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_ba8d16333363fec97518c4adcc299d37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f57adef8f7db0fd7e4e0db7e93672c7 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_ef5afe4af6d86061a0e26013477bbdd9 = $(`<div id="html_ef5afe4af6d86061a0e26013477bbdd9" style="width: 100.0%; height: 100.0%;">     <h3>photo_33_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_33_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:23<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 4953 - Pitinga-RS,91796-119 NE     </div>`)[0];
+                popup_0f57adef8f7db0fd7e4e0db7e93672c7.setContent(html_ef5afe4af6d86061a0e26013477bbdd9);
+            
+        
+
+        marker_f1df6aa7025daf1224997ffef6f5324e.bindPopup(popup_0f57adef8f7db0fd7e4e0db7e93672c7)
+        ;
+
+        
+    
+    
+            marker_f1df6aa7025daf1224997ffef6f5324e.bindTooltip(
+                `<div>
+                     photo_33_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f1df6aa7025daf1224997ffef6f5324e.setIcon(icon_ba8d16333363fec97518c4adcc299d37);
+            
+    
+            var marker_a60b38f607cf631edb6647d8d3a1376c = L.marker(
+                [-30.14432, -51.11491],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_875c7d19eac74ebc735acfe931c29336 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_224b3c1125b426cd727e59360923b7e4 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_194d1a711b35b7c96f8e3f33dda903d2 = $(`<div id="html_194d1a711b35b7c96f8e3f33dda903d2" style="width: 100.0%; height: 100.0%;">     <h3>photo_34_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_34_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:23<br><br>      <b>Endereço:</b><br>      Estr. Jodo Antonio da Silveira, 4919 - Pitinga - RS, 91796-119 s»     </div>`)[0];
+                popup_224b3c1125b426cd727e59360923b7e4.setContent(html_194d1a711b35b7c96f8e3f33dda903d2);
+            
+        
+
+        marker_a60b38f607cf631edb6647d8d3a1376c.bindPopup(popup_224b3c1125b426cd727e59360923b7e4)
+        ;
+
+        
+    
+    
+            marker_a60b38f607cf631edb6647d8d3a1376c.bindTooltip(
+                `<div>
+                     photo_34_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a60b38f607cf631edb6647d8d3a1376c.setIcon(icon_875c7d19eac74ebc735acfe931c29336);
+            
+    
+            var marker_140f4e984a9329c51a7b9d662cc26e5b = L.marker(
+                [-30.14532, -51.11301],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_ed56a437cc510413a2d24e4dfbc9af98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6fff8714a002e0d5c4cbc99aa5b6879 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_4a0bee37c099d86732d5121e195e534d = $(`<div id="html_4a0bee37c099d86732d5121e195e534d" style="width: 100.0%; height: 100.0%;">     <h3>photo_35_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_35_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:22<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 5330 - Restinga - RS     </div>`)[0];
+                popup_b6fff8714a002e0d5c4cbc99aa5b6879.setContent(html_4a0bee37c099d86732d5121e195e534d);
+            
+        
+
+        marker_140f4e984a9329c51a7b9d662cc26e5b.bindPopup(popup_b6fff8714a002e0d5c4cbc99aa5b6879)
+        ;
+
+        
+    
+    
+            marker_140f4e984a9329c51a7b9d662cc26e5b.bindTooltip(
+                `<div>
+                     photo_35_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_140f4e984a9329c51a7b9d662cc26e5b.setIcon(icon_ed56a437cc510413a2d24e4dfbc9af98);
+            
+    
+            var marker_bf9d33b54cb3374d87983d40f282aada = L.marker(
+                [-30.1456, -51.11227],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_e4d9aebdcfe1f36d2ceca7e8a9edfb50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b3f954be874d1f66b3b1516bd27d102 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_561607fdfff371ea6a30e6507b05dd0a = $(`<div id="html_561607fdfff371ea6a30e6507b05dd0a" style="width: 100.0%; height: 100.0%;">     <h3>photo_37_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_37_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:22<br><br>      <b>Endereço:</b><br>      Estr. Jodo Antonio da Silveira, 5454 - Restinga - RS     </div>`)[0];
+                popup_2b3f954be874d1f66b3b1516bd27d102.setContent(html_561607fdfff371ea6a30e6507b05dd0a);
+            
+        
+
+        marker_bf9d33b54cb3374d87983d40f282aada.bindPopup(popup_2b3f954be874d1f66b3b1516bd27d102)
+        ;
+
+        
+    
+    
+            marker_bf9d33b54cb3374d87983d40f282aada.bindTooltip(
+                `<div>
+                     photo_37_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf9d33b54cb3374d87983d40f282aada.setIcon(icon_e4d9aebdcfe1f36d2ceca7e8a9edfb50);
+            
+    
+            var marker_a775399a6d977cd0457efe4e01068b04 = L.marker(
+                [-30.14582, -51.11174],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_561922cfef0cbc849ad00411bc692f1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04996284cb7b18eb7bd3ad2a8c1febf4 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_d8e07f12f39dcc384a601c6db2bf0e9a = $(`<div id="html_d8e07f12f39dcc384a601c6db2bf0e9a" style="width: 100.0%; height: 100.0%;">     <h3>photo_38_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_38_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:22<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 5454 - Restinga - RS Ey     </div>`)[0];
+                popup_04996284cb7b18eb7bd3ad2a8c1febf4.setContent(html_d8e07f12f39dcc384a601c6db2bf0e9a);
+            
+        
+
+        marker_a775399a6d977cd0457efe4e01068b04.bindPopup(popup_04996284cb7b18eb7bd3ad2a8c1febf4)
+        ;
+
+        
+    
+    
+            marker_a775399a6d977cd0457efe4e01068b04.bindTooltip(
+                `<div>
+                     photo_38_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a775399a6d977cd0457efe4e01068b04.setIcon(icon_561922cfef0cbc849ad00411bc692f1c);
+            
+    
+            var marker_0eb390e20ca1d1a69120d3a3acbf5ab4 = L.marker(
+                [-30.14592, -51.11142],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_7c307f50b86c1643b3e7506bcb8c0cbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51e8629d579dbf74feaa0e9a386b8226 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_6fd66cf64ad3223a56178ca67f4e3724 = $(`<div id="html_6fd66cf64ad3223a56178ca67f4e3724" style="width: 100.0%; height: 100.0%;">     <h3>photo_39_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_39_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:22<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 5450 - Pitinga-RS,91796-022 NE     </div>`)[0];
+                popup_51e8629d579dbf74feaa0e9a386b8226.setContent(html_6fd66cf64ad3223a56178ca67f4e3724);
+            
+        
+
+        marker_0eb390e20ca1d1a69120d3a3acbf5ab4.bindPopup(popup_51e8629d579dbf74feaa0e9a386b8226)
+        ;
+
+        
+    
+    
+            marker_0eb390e20ca1d1a69120d3a3acbf5ab4.bindTooltip(
+                `<div>
+                     photo_39_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0eb390e20ca1d1a69120d3a3acbf5ab4.setIcon(icon_7c307f50b86c1643b3e7506bcb8c0cbc);
+            
+    
+            var marker_7070dc18e04a979b143847caa0b6fb40 = L.marker(
+                [-30.14448, -51.12855],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_dbc6beb7288ddbc2ecffc6cbb46fd098 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab98800d1589fc99102dab72f9fd2518 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_bc732c6f2b0ae366c05d007c2610cbc7 = $(`<div id="html_bc732c6f2b0ae366c05d007c2610cbc7" style="width: 100.0%; height: 100.0%;">     <h3>photo_3_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_3_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:29<br><br>      <b>Endereço:</b><br>      Joao Anténio da Silveira 3160 - Restinga - Restinga - RS,     </div>`)[0];
+                popup_ab98800d1589fc99102dab72f9fd2518.setContent(html_bc732c6f2b0ae366c05d007c2610cbc7);
+            
+        
+
+        marker_7070dc18e04a979b143847caa0b6fb40.bindPopup(popup_ab98800d1589fc99102dab72f9fd2518)
+        ;
+
+        
+    
+    
+            marker_7070dc18e04a979b143847caa0b6fb40.bindTooltip(
+                `<div>
+                     photo_3_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7070dc18e04a979b143847caa0b6fb40.setIcon(icon_dbc6beb7288ddbc2ecffc6cbb46fd098);
+            
+    
+            var marker_655254abbb1da07dfc269b9e4e48b20d = L.marker(
+                [-30.14596, -51.11114],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_b3d39b714aac4a5ee80b27243fe2fbb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a88c7a01b66794355ab0657a9c990acc = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_587cc613dd2381953b3fee9ebba47811 = $(`<div id="html_587cc613dd2381953b3fee9ebba47811" style="width: 100.0%; height: 100.0%;">     <h3>photo_40_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_40_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:22<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6000 - Pitinga-RS,91796-119 NE     </div>`)[0];
+                popup_a88c7a01b66794355ab0657a9c990acc.setContent(html_587cc613dd2381953b3fee9ebba47811);
+            
+        
+
+        marker_655254abbb1da07dfc269b9e4e48b20d.bindPopup(popup_a88c7a01b66794355ab0657a9c990acc)
+        ;
+
+        
+    
+    
+            marker_655254abbb1da07dfc269b9e4e48b20d.bindTooltip(
+                `<div>
+                     photo_40_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_655254abbb1da07dfc269b9e4e48b20d.setIcon(icon_b3d39b714aac4a5ee80b27243fe2fbb7);
+            
+    
+            var marker_e380c94c2ccfd266e7ad274d371c7d1d = L.marker(
+                [-30.14603, -51.11004],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_bad6324ddb3125519bb43a1688376ed5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7450c8600e95d3c89ad73f7aa9b8f43d = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_90fb7094525ea97e334ba5af2d02f0a3 = $(`<div id="html_90fb7094525ea97e334ba5af2d02f0a3" style="width: 100.0%; height: 100.0%;">     <h3>photo_41_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_41_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:22<br><br>      <b>Endereço:</b><br>      Joao Anténio Silveira, 328 - Pitinga - RS, 91790-400 NE     </div>`)[0];
+                popup_7450c8600e95d3c89ad73f7aa9b8f43d.setContent(html_90fb7094525ea97e334ba5af2d02f0a3);
+            
+        
+
+        marker_e380c94c2ccfd266e7ad274d371c7d1d.bindPopup(popup_7450c8600e95d3c89ad73f7aa9b8f43d)
+        ;
+
+        
+    
+    
+            marker_e380c94c2ccfd266e7ad274d371c7d1d.bindTooltip(
+                `<div>
+                     photo_41_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e380c94c2ccfd266e7ad274d371c7d1d.setIcon(icon_bad6324ddb3125519bb43a1688376ed5);
+            
+    
+            var marker_f0b18aa281c8ea2080adfe3989406aeb = L.marker(
+                [-30.1461, -51.10914],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_b63dc1f6f090b3fab4f36198827ba916 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a180880d0dda042e0ddb8a1b45ba3e6 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_7e6d2ae925d7de1e269ede10d3c7b68c = $(`<div id="html_7e6d2ae925d7de1e269ede10d3c7b68c" style="width: 100.0%; height: 100.0%;">     <h3>photo_43_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_43_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:21<br><br>      <b>Endereço:</b><br>      | Estr. Joao Antonio da Silveira, 6376 - Lomba do Pinheiro -     </div>`)[0];
+                popup_6a180880d0dda042e0ddb8a1b45ba3e6.setContent(html_7e6d2ae925d7de1e269ede10d3c7b68c);
+            
+        
+
+        marker_f0b18aa281c8ea2080adfe3989406aeb.bindPopup(popup_6a180880d0dda042e0ddb8a1b45ba3e6)
+        ;
+
+        
+    
+    
+            marker_f0b18aa281c8ea2080adfe3989406aeb.bindTooltip(
+                `<div>
+                     photo_43_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0b18aa281c8ea2080adfe3989406aeb.setIcon(icon_b63dc1f6f090b3fab4f36198827ba916);
+            
+    
+            var marker_0eb0bcba63339d591c71006429f95699 = L.marker(
+                [-30.14581, -51.10863],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_00429ca6cc60e6fd1bc69d4c28c0fc9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec34de988aaa182aef9a33041604d0f0 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_b04a871b0c5aa9f3c85fa5dc32a08b95 = $(`<div id="html_b04a871b0c5aa9f3c85fa5dc32a08b95" style="width: 100.0%; height: 100.0%;">     <h3>photo_44_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_44_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:21<br><br>      <b>Endereço:</b><br>      _Estr. Jodo Anténio da Silveira, 6400 - Piting S, 91796-062     </div>`)[0];
+                popup_ec34de988aaa182aef9a33041604d0f0.setContent(html_b04a871b0c5aa9f3c85fa5dc32a08b95);
+            
+        
+
+        marker_0eb0bcba63339d591c71006429f95699.bindPopup(popup_ec34de988aaa182aef9a33041604d0f0)
+        ;
+
+        
+    
+    
+            marker_0eb0bcba63339d591c71006429f95699.bindTooltip(
+                `<div>
+                     photo_44_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0eb0bcba63339d591c71006429f95699.setIcon(icon_00429ca6cc60e6fd1bc69d4c28c0fc9b);
+            
+    
+            var marker_bbcbc28a54e9549b93308dfd18fcbaae = L.marker(
+                [-30.14561, -51.10845],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_72809b8b916492eafe0f5032ce0bd50d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_848e4243c2919107c7688f18fe651293 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_821594122eb2cc5f2f35df766d876069 = $(`<div id="html_821594122eb2cc5f2f35df766d876069" style="width: 100.0%; height: 100.0%;">     <h3>photo_45_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_45_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:21<br><br>      <b>Endereço:</b><br>      Estr. Joao Anténio da Silveira, 6350 - Restinga - RS     </div>`)[0];
+                popup_848e4243c2919107c7688f18fe651293.setContent(html_821594122eb2cc5f2f35df766d876069);
+            
+        
+
+        marker_bbcbc28a54e9549b93308dfd18fcbaae.bindPopup(popup_848e4243c2919107c7688f18fe651293)
+        ;
+
+        
+    
+    
+            marker_bbcbc28a54e9549b93308dfd18fcbaae.bindTooltip(
+                `<div>
+                     photo_45_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bbcbc28a54e9549b93308dfd18fcbaae.setIcon(icon_72809b8b916492eafe0f5032ce0bd50d);
+            
+    
+            var marker_404fda6b9c4540110a108952b427abe6 = L.marker(
+                [-30.14562, -51.10844],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_39b8d946ff65fb16f1a0d43599ce77c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33b3321d955f8d7893e4098c261d21ba = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_2091844ab0506beb567117fd71d47f55 = $(`<div id="html_2091844ab0506beb567117fd71d47f55" style="width: 100.0%; height: 100.0%;">     <h3>photo_46_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_46_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:21<br><br>      <b>Endereço:</b><br>      Estr. Jodo Antdnio da Silveira, 6350 - Restinga - RS     </div>`)[0];
+                popup_33b3321d955f8d7893e4098c261d21ba.setContent(html_2091844ab0506beb567117fd71d47f55);
+            
+        
+
+        marker_404fda6b9c4540110a108952b427abe6.bindPopup(popup_33b3321d955f8d7893e4098c261d21ba)
+        ;
+
+        
+    
+    
+            marker_404fda6b9c4540110a108952b427abe6.bindTooltip(
+                `<div>
+                     photo_46_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_404fda6b9c4540110a108952b427abe6.setIcon(icon_39b8d946ff65fb16f1a0d43599ce77c8);
+            
+    
+            var marker_06cf61329d9e8ca01076afe586693bc4 = L.marker(
+                [-30.14527, -51.10811],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_a5e5bcdc3ca9f6145460bebaa87c6639 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f09a26a4b73fb94f67afc9bec19ef0db = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_713bbdd5c90fb4383d53b751a377de2c = $(`<div id="html_713bbdd5c90fb4383d53b751a377de2c" style="width: 100.0%; height: 100.0%;">     <h3>photo_47_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_47_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:20<br><br>      <b>Endereço:</b><br>      _ Joao Antonio Silveira 6350 - Pitinga - RS     </div>`)[0];
+                popup_f09a26a4b73fb94f67afc9bec19ef0db.setContent(html_713bbdd5c90fb4383d53b751a377de2c);
+            
+        
+
+        marker_06cf61329d9e8ca01076afe586693bc4.bindPopup(popup_f09a26a4b73fb94f67afc9bec19ef0db)
+        ;
+
+        
+    
+    
+            marker_06cf61329d9e8ca01076afe586693bc4.bindTooltip(
+                `<div>
+                     photo_47_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_06cf61329d9e8ca01076afe586693bc4.setIcon(icon_a5e5bcdc3ca9f6145460bebaa87c6639);
+            
+    
+            var marker_4cafa6bf49fe0f35c025f13848fdb775 = L.marker(
+                [-30.14483, -51.10771],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_15a2d3e1777696b2f8d8cb1ac3a24080 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d0281ea31c0c3d76d4c2177d5014b92 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_ef0d6b6143c59cacfc49c40f6b1dcfe7 = $(`<div id="html_ef0d6b6143c59cacfc49c40f6b1dcfe7" style="width: 100.0%; height: 100.0%;">     <h3>photo_48_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_48_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:20<br><br>      <b>Endereço:</b><br>           </div>`)[0];
+                popup_7d0281ea31c0c3d76d4c2177d5014b92.setContent(html_ef0d6b6143c59cacfc49c40f6b1dcfe7);
+            
+        
+
+        marker_4cafa6bf49fe0f35c025f13848fdb775.bindPopup(popup_7d0281ea31c0c3d76d4c2177d5014b92)
+        ;
+
+        
+    
+    
+            marker_4cafa6bf49fe0f35c025f13848fdb775.bindTooltip(
+                `<div>
+                     photo_48_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4cafa6bf49fe0f35c025f13848fdb775.setIcon(icon_15a2d3e1777696b2f8d8cb1ac3a24080);
+            
+    
+            var marker_c81bd61677c73fb2f2d35c004ff3be91 = L.marker(
+                [-30.14449, -51.1074],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_37169d03fad2a3dd11701f11b7449b03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2249618dd0b6dc44da641c8b57554634 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_741f653a5248861a313085dee8d52791 = $(`<div id="html_741f653a5248861a313085dee8d52791" style="width: 100.0%; height: 100.0%;">     <h3>photo_49_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_49_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> <br><br>      <b>Endereço:</b><br>      Estr. Jodo Antonio da Silveira, 6426 - Pitinga - RS, 91796022     </div>`)[0];
+                popup_2249618dd0b6dc44da641c8b57554634.setContent(html_741f653a5248861a313085dee8d52791);
+            
+        
+
+        marker_c81bd61677c73fb2f2d35c004ff3be91.bindPopup(popup_2249618dd0b6dc44da641c8b57554634)
+        ;
+
+        
+    
+    
+            marker_c81bd61677c73fb2f2d35c004ff3be91.bindTooltip(
+                `<div>
+                     photo_49_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c81bd61677c73fb2f2d35c004ff3be91.setIcon(icon_37169d03fad2a3dd11701f11b7449b03);
+            
+    
+            var marker_75acd558e2ec1f97c661a800d0f98ed4 = L.marker(
+                [-30.14422, -51.12838],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_0850931df42e20dd8e78ff603237ebc1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b5c547faa5ff8dd11cc1b1a34f7182a = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_a29a6df7c5fb89d3a93e636c1700d6bb = $(`<div id="html_a29a6df7c5fb89d3a93e636c1700d6bb" style="width: 100.0%; height: 100.0%;">     <h3>photo_4_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_4_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:29<br><br>      <b>Endereço:</b><br>      Estr. Jodo Antonio da Silveira, 3233 - Restinga - RS,     </div>`)[0];
+                popup_7b5c547faa5ff8dd11cc1b1a34f7182a.setContent(html_a29a6df7c5fb89d3a93e636c1700d6bb);
+            
+        
+
+        marker_75acd558e2ec1f97c661a800d0f98ed4.bindPopup(popup_7b5c547faa5ff8dd11cc1b1a34f7182a)
+        ;
+
+        
+    
+    
+            marker_75acd558e2ec1f97c661a800d0f98ed4.bindTooltip(
+                `<div>
+                     photo_4_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75acd558e2ec1f97c661a800d0f98ed4.setIcon(icon_0850931df42e20dd8e78ff603237ebc1);
+            
+    
+            var marker_f9cd5358b35e98556546259d145257b9 = L.marker(
+                [-30.14437, -51.1072],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_2b83a00815a63d4118da796f4a66aac8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb90c46cd9ac7ef27829b1d1a2981047 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_b90530c190ac5fe1f16800f2d047b5b0 = $(`<div id="html_b90530c190ac5fe1f16800f2d047b5b0" style="width: 100.0%; height: 100.0%;">     <h3>photo_50_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_50_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:20<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6430 - Restinga - RS,     </div>`)[0];
+                popup_eb90c46cd9ac7ef27829b1d1a2981047.setContent(html_b90530c190ac5fe1f16800f2d047b5b0);
+            
+        
+
+        marker_f9cd5358b35e98556546259d145257b9.bindPopup(popup_eb90c46cd9ac7ef27829b1d1a2981047)
+        ;
+
+        
+    
+    
+            marker_f9cd5358b35e98556546259d145257b9.bindTooltip(
+                `<div>
+                     photo_50_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f9cd5358b35e98556546259d145257b9.setIcon(icon_2b83a00815a63d4118da796f4a66aac8);
+            
+    
+            var marker_59b5d448f290ac3f243dd51682439399 = L.marker(
+                [-30.14073, -51.10321],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_2d0c812287c3f9edd489e48b53400278 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd2726736f251df7fd80c5d9272ae662 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_874c035d95646fa3e4cf2893d21d95a2 = $(`<div id="html_874c035d95646fa3e4cf2893d21d95a2" style="width: 100.0%; height: 100.0%;">     <h3>photo_51_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_51_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:16<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6745 - Restinga - RS,     </div>`)[0];
+                popup_fd2726736f251df7fd80c5d9272ae662.setContent(html_874c035d95646fa3e4cf2893d21d95a2);
+            
+        
+
+        marker_59b5d448f290ac3f243dd51682439399.bindPopup(popup_fd2726736f251df7fd80c5d9272ae662)
+        ;
+
+        
+    
+    
+            marker_59b5d448f290ac3f243dd51682439399.bindTooltip(
+                `<div>
+                     photo_51_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_59b5d448f290ac3f243dd51682439399.setIcon(icon_2d0c812287c3f9edd489e48b53400278);
+            
+    
+            var marker_63c478248127cd9a80034af9aabf281e = L.marker(
+                [-30.13996, -51.10261],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_402dd2aed730dcf104b41e543734abce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64a887baaac7f3aff625b3e36771d7a8 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_4d82c0fabd118cbf3e43f555c7567f98 = $(`<div id="html_4d82c0fabd118cbf3e43f555c7567f98" style="width: 100.0%; height: 100.0%;">     <h3>photo_52_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_52_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:16<br><br>      <b>Endereço:</b><br>      Estr. Jodo Antdnio da Silveira, 6774 - Lomba do Pinheiro - RS,     </div>`)[0];
+                popup_64a887baaac7f3aff625b3e36771d7a8.setContent(html_4d82c0fabd118cbf3e43f555c7567f98);
+            
+        
+
+        marker_63c478248127cd9a80034af9aabf281e.bindPopup(popup_64a887baaac7f3aff625b3e36771d7a8)
+        ;
+
+        
+    
+    
+            marker_63c478248127cd9a80034af9aabf281e.bindTooltip(
+                `<div>
+                     photo_52_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63c478248127cd9a80034af9aabf281e.setIcon(icon_402dd2aed730dcf104b41e543734abce);
+            
+    
+            var marker_bb1aafe144ffb8d3ace2c53986e51c58 = L.marker(
+                [-30.13995, -51.10263],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_43c1e55ff32c17c33f8aaf090377487d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_adc354b389303568ba6d92c172994961 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_6416e30a85a678941fe85ccec2a647ba = $(`<div id="html_6416e30a85a678941fe85ccec2a647ba" style="width: 100.0%; height: 100.0%;">     <h3>photo_53_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_53_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:16<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6715 - Restinga -RS, 91796-161 SE     </div>`)[0];
+                popup_adc354b389303568ba6d92c172994961.setContent(html_6416e30a85a678941fe85ccec2a647ba);
+            
+        
+
+        marker_bb1aafe144ffb8d3ace2c53986e51c58.bindPopup(popup_adc354b389303568ba6d92c172994961)
+        ;
+
+        
+    
+    
+            marker_bb1aafe144ffb8d3ace2c53986e51c58.bindTooltip(
+                `<div>
+                     photo_53_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bb1aafe144ffb8d3ace2c53986e51c58.setIcon(icon_43c1e55ff32c17c33f8aaf090377487d);
+            
+    
+            var marker_d78ee1537eb653820b687332ac839f82 = L.marker(
+                [-30.13913, -51.10219],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_8f0e897f745a71fa6b79c5a7caff0bcd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f6df711700fa7c00326c6715e5a9e2e = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_428567384bbb30b4f7062f5ccace6d56 = $(`<div id="html_428567384bbb30b4f7062f5ccace6d56" style="width: 100.0%; height: 100.0%;">     <h3>photo_54_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_54_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:16<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 14 - Restinga - RS, 91790-61 zZ E     </div>`)[0];
+                popup_3f6df711700fa7c00326c6715e5a9e2e.setContent(html_428567384bbb30b4f7062f5ccace6d56);
+            
+        
+
+        marker_d78ee1537eb653820b687332ac839f82.bindPopup(popup_3f6df711700fa7c00326c6715e5a9e2e)
+        ;
+
+        
+    
+    
+            marker_d78ee1537eb653820b687332ac839f82.bindTooltip(
+                `<div>
+                     photo_54_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d78ee1537eb653820b687332ac839f82.setIcon(icon_8f0e897f745a71fa6b79c5a7caff0bcd);
+            
+    
+            var marker_4a44fbfed3c2faba91cad62cbbbe1097 = L.marker(
+                [-30.13913, -51.10219],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_463bda70305de82f99c32a48b994a63c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4691ff7518ad260e2675ea0539dc6f70 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_55838fc0255e9ee0b0b98aea867a3c99 = $(`<div id="html_55838fc0255e9ee0b0b98aea867a3c99" style="width: 100.0%; height: 100.0%;">     <h3>photo_55_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_55_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:15<br><br>      <b>Endereço:</b><br>      Jodo Antonio Silveira 6892 - Pitinga - RS, 91790-400 NE     </div>`)[0];
+                popup_4691ff7518ad260e2675ea0539dc6f70.setContent(html_55838fc0255e9ee0b0b98aea867a3c99);
+            
+        
+
+        marker_4a44fbfed3c2faba91cad62cbbbe1097.bindPopup(popup_4691ff7518ad260e2675ea0539dc6f70)
+        ;
+
+        
+    
+    
+            marker_4a44fbfed3c2faba91cad62cbbbe1097.bindTooltip(
+                `<div>
+                     photo_55_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a44fbfed3c2faba91cad62cbbbe1097.setIcon(icon_463bda70305de82f99c32a48b994a63c);
+            
+    
+            var marker_b48f71fe77d50193ac57d265b44343d0 = L.marker(
+                [-30.13912, -51.10218],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_ff646cc098ece81fb3f751798cd0d252 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c443c8a22f8007ea99ee8b5516715fce = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_c4705b0e391a97051ca47553039269e1 = $(`<div id="html_c4705b0e391a97051ca47553039269e1" style="width: 100.0%; height: 100.0%;">     <h3>photo_56_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_56_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:15<br><br>      <b>Endereço:</b><br>      Joao Antonio Silveira - Pitinga - RS, 91790-400 NE     </div>`)[0];
+                popup_c443c8a22f8007ea99ee8b5516715fce.setContent(html_c4705b0e391a97051ca47553039269e1);
+            
+        
+
+        marker_b48f71fe77d50193ac57d265b44343d0.bindPopup(popup_c443c8a22f8007ea99ee8b5516715fce)
+        ;
+
+        
+    
+    
+            marker_b48f71fe77d50193ac57d265b44343d0.bindTooltip(
+                `<div>
+                     photo_56_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b48f71fe77d50193ac57d265b44343d0.setIcon(icon_ff646cc098ece81fb3f751798cd0d252);
+            
+    
+            var marker_bf284a51939318cdbb98752d8e319137 = L.marker(
+                [-30.13872, -51.10195],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_d9be06ec9d18c524b92760b86a3bce4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cb66228f551dacf79ffae4d18d91279 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_203d33099d9d83153e268b123122aabf = $(`<div id="html_203d33099d9d83153e268b123122aabf" style="width: 100.0%; height: 100.0%;">     <h3>photo_57_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_57_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:15<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6820 - Restinga -RS;     </div>`)[0];
+                popup_5cb66228f551dacf79ffae4d18d91279.setContent(html_203d33099d9d83153e268b123122aabf);
+            
+        
+
+        marker_bf284a51939318cdbb98752d8e319137.bindPopup(popup_5cb66228f551dacf79ffae4d18d91279)
+        ;
+
+        
+    
+    
+            marker_bf284a51939318cdbb98752d8e319137.bindTooltip(
+                `<div>
+                     photo_57_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf284a51939318cdbb98752d8e319137.setIcon(icon_d9be06ec9d18c524b92760b86a3bce4f);
+            
+    
+            var marker_517ba3187e338dc4511b50b80d7cc0fe = L.marker(
+                [-30.13797, -51.10154],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_e59b9a923be745aa881d96482c4e331f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abe5fc3bde99353952056278046668e2 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_b18f2c84aed1a9234bdf00861807e012 = $(`<div id="html_b18f2c84aed1a9234bdf00861807e012" style="width: 100.0%; height: 100.0%;">     <h3>photo_58_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_58_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:14<br><br>      <b>Endereço:</b><br>      Beco Dois, 6023 - Restinga- RS, 91790-40] a E     </div>`)[0];
+                popup_abe5fc3bde99353952056278046668e2.setContent(html_b18f2c84aed1a9234bdf00861807e012);
+            
+        
+
+        marker_517ba3187e338dc4511b50b80d7cc0fe.bindPopup(popup_abe5fc3bde99353952056278046668e2)
+        ;
+
+        
+    
+    
+            marker_517ba3187e338dc4511b50b80d7cc0fe.bindTooltip(
+                `<div>
+                     photo_58_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_517ba3187e338dc4511b50b80d7cc0fe.setIcon(icon_e59b9a923be745aa881d96482c4e331f);
+            
+    
+            var marker_45e1c782168dc2c163fe632d02b54d40 = L.marker(
+                [-30.13797, -51.10154],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_0413acb00752621810d9e36e829ee022 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6b1308329fb566c6ef2a283274d92d1 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_36b0a8fefd0939957f2a76d7d5815ba9 = $(`<div id="html_36b0a8fefd0939957f2a76d7d5815ba9" style="width: 100.0%; height: 100.0%;">     <h3>photo_59_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_59_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:14<br><br>      <b>Endereço:</b><br>      Beco Dois, 6023 - Restinga - RS, 91790-401 E     </div>`)[0];
+                popup_c6b1308329fb566c6ef2a283274d92d1.setContent(html_36b0a8fefd0939957f2a76d7d5815ba9);
+            
+        
+
+        marker_45e1c782168dc2c163fe632d02b54d40.bindPopup(popup_c6b1308329fb566c6ef2a283274d92d1)
+        ;
+
+        
+    
+    
+            marker_45e1c782168dc2c163fe632d02b54d40.bindTooltip(
+                `<div>
+                     photo_59_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45e1c782168dc2c163fe632d02b54d40.setIcon(icon_0413acb00752621810d9e36e829ee022);
+            
+    
+            var marker_a9d0b44aa4070b957e6f17c04c9e59bc = L.marker(
+                [-30.14362, -51.12801],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_f697f03cbcd236691a15a66ce9c8f886 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8837c5ec4eac035cc50ced20e38a983 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_288816fa65581b34164e1ba2b86a1622 = $(`<div id="html_288816fa65581b34164e1ba2b86a1622" style="width: 100.0%; height: 100.0%;">     <h3>photo_5_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_5_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:29<br><br>      <b>Endereço:</b><br>      Estrada Joao Antonio Da Silveira, 3279 - Restinga - RS,     </div>`)[0];
+                popup_a8837c5ec4eac035cc50ced20e38a983.setContent(html_288816fa65581b34164e1ba2b86a1622);
+            
+        
+
+        marker_a9d0b44aa4070b957e6f17c04c9e59bc.bindPopup(popup_a8837c5ec4eac035cc50ced20e38a983)
+        ;
+
+        
+    
+    
+            marker_a9d0b44aa4070b957e6f17c04c9e59bc.bindTooltip(
+                `<div>
+                     photo_5_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9d0b44aa4070b957e6f17c04c9e59bc.setIcon(icon_f697f03cbcd236691a15a66ce9c8f886);
+            
+    
+            var marker_38df3f8c407f4fb6c93f27a487d78d27 = L.marker(
+                [-30.13768, -51.10133],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_ad29c6f0c99e6fa128decbe7ea2ae149 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a911b9cfbcb9b150bd96109d3dbbfeb = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_66575934f2a09078394e1f317befe29d = $(`<div id="html_66575934f2a09078394e1f317befe29d" style="width: 100.0%; height: 100.0%;">     <h3>photo_60_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_60_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:14<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6086 - Lomba do Pinheiro -     </div>`)[0];
+                popup_8a911b9cfbcb9b150bd96109d3dbbfeb.setContent(html_66575934f2a09078394e1f317befe29d);
+            
+        
+
+        marker_38df3f8c407f4fb6c93f27a487d78d27.bindPopup(popup_8a911b9cfbcb9b150bd96109d3dbbfeb)
+        ;
+
+        
+    
+    
+            marker_38df3f8c407f4fb6c93f27a487d78d27.bindTooltip(
+                `<div>
+                     photo_60_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_38df3f8c407f4fb6c93f27a487d78d27.setIcon(icon_ad29c6f0c99e6fa128decbe7ea2ae149);
+            
+    
+            var marker_3245aec9272c16b5e81ac9c789952bec = L.marker(
+                [-30.14426, -51.10694],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_3d66965fa2f4d248027dd08dc92ea348 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d2f08d210efb6395c141cdb698c707a = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_e1fbe3c4483da53d34f8be5cd16106fc = $(`<div id="html_e1fbe3c4483da53d34f8be5cd16106fc" style="width: 100.0%; height: 100.0%;">     <h3>photo_61_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_61_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:19<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6452 - Restinga - RS,     </div>`)[0];
+                popup_3d2f08d210efb6395c141cdb698c707a.setContent(html_e1fbe3c4483da53d34f8be5cd16106fc);
+            
+        
+
+        marker_3245aec9272c16b5e81ac9c789952bec.bindPopup(popup_3d2f08d210efb6395c141cdb698c707a)
+        ;
+
+        
+    
+    
+            marker_3245aec9272c16b5e81ac9c789952bec.bindTooltip(
+                `<div>
+                     photo_61_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3245aec9272c16b5e81ac9c789952bec.setIcon(icon_3d66965fa2f4d248027dd08dc92ea348);
+            
+    
+            var marker_cd47d8b28cd992987a6572eb2384c785 = L.marker(
+                [-30.14312, -51.10541],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_7b4ab868ae036fa6156883097156a2dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_945d105b6bbd63724ab9988c2c7677cb = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_bd069ee78a70dc242a304cca5928800c = $(`<div id="html_bd069ee78a70dc242a304cca5928800c" style="width: 100.0%; height: 100.0%;">     <h3>photo_62_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_62_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:18<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 309 - Restinga - RS,     </div>`)[0];
+                popup_945d105b6bbd63724ab9988c2c7677cb.setContent(html_bd069ee78a70dc242a304cca5928800c);
+            
+        
+
+        marker_cd47d8b28cd992987a6572eb2384c785.bindPopup(popup_945d105b6bbd63724ab9988c2c7677cb)
+        ;
+
+        
+    
+    
+            marker_cd47d8b28cd992987a6572eb2384c785.bindTooltip(
+                `<div>
+                     photo_62_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cd47d8b28cd992987a6572eb2384c785.setIcon(icon_7b4ab868ae036fa6156883097156a2dd);
+            
+    
+            var marker_845ec39e38654ccd2093f299d4feec04 = L.marker(
+                [-30.1424, -51.10509],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_4295c7b839bed8b373696e876dde7912 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d103234416d750147008b12595689c3 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_4146e05a44e47368ceef551849bafd93 = $(`<div id="html_4146e05a44e47368ceef551849bafd93" style="width: 100.0%; height: 100.0%;">     <h3>photo_63_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_63_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:18<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6492 - Restinga - RS,     </div>`)[0];
+                popup_6d103234416d750147008b12595689c3.setContent(html_4146e05a44e47368ceef551849bafd93);
+            
+        
+
+        marker_845ec39e38654ccd2093f299d4feec04.bindPopup(popup_6d103234416d750147008b12595689c3)
+        ;
+
+        
+    
+    
+            marker_845ec39e38654ccd2093f299d4feec04.bindTooltip(
+                `<div>
+                     photo_63_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_845ec39e38654ccd2093f299d4feec04.setIcon(icon_4295c7b839bed8b373696e876dde7912);
+            
+    
+            var marker_4dbd9673fac0a48224e62bcf0ddb1765 = L.marker(
+                [-30.14232, -51.10508],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_64860078409d87f0f8375af58e8dabe3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ed9134c0b2fe171a34cd2a0ef0d320c = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_9014b66ff2b378e0ebae2345ed16b8ed = $(`<div id="html_9014b66ff2b378e0ebae2345ed16b8ed" style="width: 100.0%; height: 100.0%;">     <h3>photo_64_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_64_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:18<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 190 - Pitinga - RS, 91790-612 NE     </div>`)[0];
+                popup_0ed9134c0b2fe171a34cd2a0ef0d320c.setContent(html_9014b66ff2b378e0ebae2345ed16b8ed);
+            
+        
+
+        marker_4dbd9673fac0a48224e62bcf0ddb1765.bindPopup(popup_0ed9134c0b2fe171a34cd2a0ef0d320c)
+        ;
+
+        
+    
+    
+            marker_4dbd9673fac0a48224e62bcf0ddb1765.bindTooltip(
+                `<div>
+                     photo_64_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4dbd9673fac0a48224e62bcf0ddb1765.setIcon(icon_64860078409d87f0f8375af58e8dabe3);
+            
+    
+            var marker_09ccb16c584e3f1335ab5f30e0b680f9 = L.marker(
+                [-30.14201, -51.10468],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_7c5ed0b403da7a04956ca43a5d744206 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bde80df9ed05a0e07bf4f428e5b13c3d = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_e42d28bdccc3e4fdf4543de278ebacde = $(`<div id="html_e42d28bdccc3e4fdf4543de278ebacde" style="width: 100.0%; height: 100.0%;">     <h3>photo_65_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_65_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:18<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6562 - Restinga - RS,     </div>`)[0];
+                popup_bde80df9ed05a0e07bf4f428e5b13c3d.setContent(html_e42d28bdccc3e4fdf4543de278ebacde);
+            
+        
+
+        marker_09ccb16c584e3f1335ab5f30e0b680f9.bindPopup(popup_bde80df9ed05a0e07bf4f428e5b13c3d)
+        ;
+
+        
+    
+    
+            marker_09ccb16c584e3f1335ab5f30e0b680f9.bindTooltip(
+                `<div>
+                     photo_65_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09ccb16c584e3f1335ab5f30e0b680f9.setIcon(icon_7c5ed0b403da7a04956ca43a5d744206);
+            
+    
+            var marker_e5821f18816df3228f9587989a88e3e8 = L.marker(
+                [-30.14181, -51.10448],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_3edcc04cf53dbf700b6dfdbc3a191cd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96210a6ca31a06126d80ad4f9e067d06 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_b57206d51c65cfaa6b262bc371b46319 = $(`<div id="html_b57206d51c65cfaa6b262bc371b46319" style="width: 100.0%; height: 100.0%;">     <h3>photo_66_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_66_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:17<br><br>      <b>Endereço:</b><br>      Joao Antonio Silveira Al 6436 - Pitinga - RS, 91790-400     </div>`)[0];
+                popup_96210a6ca31a06126d80ad4f9e067d06.setContent(html_b57206d51c65cfaa6b262bc371b46319);
+            
+        
+
+        marker_e5821f18816df3228f9587989a88e3e8.bindPopup(popup_96210a6ca31a06126d80ad4f9e067d06)
+        ;
+
+        
+    
+    
+            marker_e5821f18816df3228f9587989a88e3e8.bindTooltip(
+                `<div>
+                     photo_66_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e5821f18816df3228f9587989a88e3e8.setIcon(icon_3edcc04cf53dbf700b6dfdbc3a191cd2);
+            
+    
+            var marker_2713e9e2bd9569b1d05a0d44dc56d012 = L.marker(
+                [-30.14158, -51.10421],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_88661546bd4080dc70e42bbe6eceb681 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2533df2440801523428d19343b248d67 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_cd87da4b8cd521f1699a94c3651e6c2e = $(`<div id="html_cd87da4b8cd521f1699a94c3651e6c2e" style="width: 100.0%; height: 100.0%;">     <h3>photo_67_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_67_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:17<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6619 - Restinga - RS, pik     </div>`)[0];
+                popup_2533df2440801523428d19343b248d67.setContent(html_cd87da4b8cd521f1699a94c3651e6c2e);
+            
+        
+
+        marker_2713e9e2bd9569b1d05a0d44dc56d012.bindPopup(popup_2533df2440801523428d19343b248d67)
+        ;
+
+        
+    
+    
+            marker_2713e9e2bd9569b1d05a0d44dc56d012.bindTooltip(
+                `<div>
+                     photo_67_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2713e9e2bd9569b1d05a0d44dc56d012.setIcon(icon_88661546bd4080dc70e42bbe6eceb681);
+            
+    
+            var marker_31e2044a8b3a22f0c323cc59e063fb84 = L.marker(
+                [-30.14119, -51.10371],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_4fe9cb2657aa94e8d924f9a7d8441704 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d50e334f8795c5425a0576c1b946431 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_42aa1560e71599cb728f9fdd7d8a0c15 = $(`<div id="html_42aa1560e71599cb728f9fdd7d8a0c15" style="width: 100.0%; height: 100.0%;">     <h3>photo_69_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_69_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:17<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6788 - Pitinga-RS,91796-070 NE     </div>`)[0];
+                popup_3d50e334f8795c5425a0576c1b946431.setContent(html_42aa1560e71599cb728f9fdd7d8a0c15);
+            
+        
+
+        marker_31e2044a8b3a22f0c323cc59e063fb84.bindPopup(popup_3d50e334f8795c5425a0576c1b946431)
+        ;
+
+        
+    
+    
+            marker_31e2044a8b3a22f0c323cc59e063fb84.bindTooltip(
+                `<div>
+                     photo_69_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31e2044a8b3a22f0c323cc59e063fb84.setIcon(icon_4fe9cb2657aa94e8d924f9a7d8441704);
+            
+    
+            var marker_85c894aa12991e121370e931618d2efc = L.marker(
+                [-30.14343, -51.12788],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_98e5ed61d608f21197dd70d333797f79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cadd288dc0aca8bf9e0c37a2fc7bb2bf = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_1b7813cf44b97b8f33fcb366a55dd533 = $(`<div id="html_1b7813cf44b97b8f33fcb366a55dd533" style="width: 100.0%; height: 100.0%;">     <h3>photo_6_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_6_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:29<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 3300 - Restinga- RS,     </div>`)[0];
+                popup_cadd288dc0aca8bf9e0c37a2fc7bb2bf.setContent(html_1b7813cf44b97b8f33fcb366a55dd533);
+            
+        
+
+        marker_85c894aa12991e121370e931618d2efc.bindPopup(popup_cadd288dc0aca8bf9e0c37a2fc7bb2bf)
+        ;
+
+        
+    
+    
+            marker_85c894aa12991e121370e931618d2efc.bindTooltip(
+                `<div>
+                     photo_6_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_85c894aa12991e121370e931618d2efc.setIcon(icon_98e5ed61d608f21197dd70d333797f79);
+            
+    
+            var marker_d697be6c9ed8eaba9f0cdc120d34fa52 = L.marker(
+                [-30.1409, -51.10336],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_e94f5fd6d4119a3998fc87cb78390af1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dece86bb6a659f5ea79a2125e98cb0e0 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_4997fdfef6920106160ab54a1dd16550 = $(`<div id="html_4997fdfef6920106160ab54a1dd16550" style="width: 100.0%; height: 100.0%;">     <h3>photo_70_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_70_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:17<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6658 - Pitinga-RS,91796-070 NE     </div>`)[0];
+                popup_dece86bb6a659f5ea79a2125e98cb0e0.setContent(html_4997fdfef6920106160ab54a1dd16550);
+            
+        
+
+        marker_d697be6c9ed8eaba9f0cdc120d34fa52.bindPopup(popup_dece86bb6a659f5ea79a2125e98cb0e0)
+        ;
+
+        
+    
+    
+            marker_d697be6c9ed8eaba9f0cdc120d34fa52.bindTooltip(
+                `<div>
+                     photo_70_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d697be6c9ed8eaba9f0cdc120d34fa52.setIcon(icon_e94f5fd6d4119a3998fc87cb78390af1);
+            
+    
+            var marker_11fc1aed846c4ebfed33dd3b894fd4bf = L.marker(
+                [-30.13747, -51.10115],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_20864f3d9224583272e29b9727a4d0b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f22ee7696b1eb4b49e41ae99c39f2cd2 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_f8f9c5f66b1ff3941b9e535acf381dd2 = $(`<div id="html_f8f9c5f66b1ff3941b9e535acf381dd2" style="width: 100.0%; height: 100.0%;">     <h3>photo_71_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_71_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:14<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6097 - Restinga - RS,     </div>`)[0];
+                popup_f22ee7696b1eb4b49e41ae99c39f2cd2.setContent(html_f8f9c5f66b1ff3941b9e535acf381dd2);
+            
+        
+
+        marker_11fc1aed846c4ebfed33dd3b894fd4bf.bindPopup(popup_f22ee7696b1eb4b49e41ae99c39f2cd2)
+        ;
+
+        
+    
+    
+            marker_11fc1aed846c4ebfed33dd3b894fd4bf.bindTooltip(
+                `<div>
+                     photo_71_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11fc1aed846c4ebfed33dd3b894fd4bf.setIcon(icon_20864f3d9224583272e29b9727a4d0b9);
+            
+    
+            var marker_a3ab8bfc27f251f02be40719a0ed3ab5 = L.marker(
+                [-30.13725, -51.10016],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_d02ba74df7622e26844efb5d2562ea62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c332d2d5ac71ea29a43b41909f377f25 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_3185fcbfd5710ea65a8613689515ade3 = $(`<div id="html_3185fcbfd5710ea65a8613689515ade3" style="width: 100.0%; height: 100.0%;">     <h3>photo_72_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_72_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:13<br><br>      <b>Endereço:</b><br>      Avenida Joao Anténio Silveira, 7248 - Pitinga - RS, 91790-400 E     </div>`)[0];
+                popup_c332d2d5ac71ea29a43b41909f377f25.setContent(html_3185fcbfd5710ea65a8613689515ade3);
+            
+        
+
+        marker_a3ab8bfc27f251f02be40719a0ed3ab5.bindPopup(popup_c332d2d5ac71ea29a43b41909f377f25)
+        ;
+
+        
+    
+    
+            marker_a3ab8bfc27f251f02be40719a0ed3ab5.bindTooltip(
+                `<div>
+                     photo_72_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a3ab8bfc27f251f02be40719a0ed3ab5.setIcon(icon_d02ba74df7622e26844efb5d2562ea62);
+            
+    
+            var marker_c3551f89b9cfff5a01bbb6eddf7c23c8 = L.marker(
+                [-30.13725, -51.10016],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_19ba686c0f0e4dc80f82dfc879ddafd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a5aafab650fddcae1eed6318c68d59c = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_8e2bb4066c2f70b350a0ec743a8cf465 = $(`<div id="html_8e2bb4066c2f70b350a0ec743a8cf465" style="width: 100.0%; height: 100.0%;">     <h3>photo_73_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_73_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:13<br><br>      <b>Endereço:</b><br>      Avenida Joao Anténio Silveira, 7248 - Pitinga - RS, 91790-400     </div>`)[0];
+                popup_0a5aafab650fddcae1eed6318c68d59c.setContent(html_8e2bb4066c2f70b350a0ec743a8cf465);
+            
+        
+
+        marker_c3551f89b9cfff5a01bbb6eddf7c23c8.bindPopup(popup_0a5aafab650fddcae1eed6318c68d59c)
+        ;
+
+        
+    
+    
+            marker_c3551f89b9cfff5a01bbb6eddf7c23c8.bindTooltip(
+                `<div>
+                     photo_73_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c3551f89b9cfff5a01bbb6eddf7c23c8.setIcon(icon_19ba686c0f0e4dc80f82dfc879ddafd6);
+            
+    
+            var marker_cef773fa34c4e98f91dbd3b215b3947e = L.marker(
+                [-30.13723, -51.1001],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_ae0d4e41047a6ebdfd5ed322b09c2e3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2b87ad7215f4214d7e7b2ad079e89f0 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_6a8568de30f13b11bc57a1f6e4d2573c = $(`<div id="html_6a8568de30f13b11bc57a1f6e4d2573c" style="width: 100.0%; height: 100.0%;">     <h3>photo_74_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_74_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:12<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 6710 - Restinga - RS,     </div>`)[0];
+                popup_e2b87ad7215f4214d7e7b2ad079e89f0.setContent(html_6a8568de30f13b11bc57a1f6e4d2573c);
+            
+        
+
+        marker_cef773fa34c4e98f91dbd3b215b3947e.bindPopup(popup_e2b87ad7215f4214d7e7b2ad079e89f0)
+        ;
+
+        
+    
+    
+            marker_cef773fa34c4e98f91dbd3b215b3947e.bindTooltip(
+                `<div>
+                     photo_74_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cef773fa34c4e98f91dbd3b215b3947e.setIcon(icon_ae0d4e41047a6ebdfd5ed322b09c2e3c);
+            
+    
+            var marker_d466650df53671d135ea8c5d832d8cec = L.marker(
+                [-30.13723, -51.09996],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_81f6eeea6d10292b00ab9a49d655c2fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efb378e5ef901f0fce3c7650462ffa1f = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_1a509942478e2276dab68ba2140b3382 = $(`<div id="html_1a509942478e2276dab68ba2140b3382" style="width: 100.0%; height: 100.0%;">     <h3>photo_75_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_75_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:12<br><br>      <b>Endereço:</b><br>      Avenida Joao Anténio Silveira, 7248 - Pitinga-RS,91790-400 SE     </div>`)[0];
+                popup_efb378e5ef901f0fce3c7650462ffa1f.setContent(html_1a509942478e2276dab68ba2140b3382);
+            
+        
+
+        marker_d466650df53671d135ea8c5d832d8cec.bindPopup(popup_efb378e5ef901f0fce3c7650462ffa1f)
+        ;
+
+        
+    
+    
+            marker_d466650df53671d135ea8c5d832d8cec.bindTooltip(
+                `<div>
+                     photo_75_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d466650df53671d135ea8c5d832d8cec.setIcon(icon_81f6eeea6d10292b00ab9a49d655c2fa);
+            
+    
+            var marker_26fb093c9abd64d90f01fdaecad3e62a = L.marker(
+                [-30.13712, -51.09925],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_b13f2b0afb09d0825ac044a143dc20ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30c46edaebb0e1d7a7ab1bf99b85bccf = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_9af4dafc888e55c029a5f80f4aed7eca = $(`<div id="html_9af4dafc888e55c029a5f80f4aed7eca" style="width: 100.0%; height: 100.0%;">     <h3>photo_76_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_76_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:12<br><br>      <b>Endereço:</b><br>      Estr. Joao Anténio da Silveira, 3651 - Pitinga - RS, 91796-101 SE     </div>`)[0];
+                popup_30c46edaebb0e1d7a7ab1bf99b85bccf.setContent(html_9af4dafc888e55c029a5f80f4aed7eca);
+            
+        
+
+        marker_26fb093c9abd64d90f01fdaecad3e62a.bindPopup(popup_30c46edaebb0e1d7a7ab1bf99b85bccf)
+        ;
+
+        
+    
+    
+            marker_26fb093c9abd64d90f01fdaecad3e62a.bindTooltip(
+                `<div>
+                     photo_76_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_26fb093c9abd64d90f01fdaecad3e62a.setIcon(icon_b13f2b0afb09d0825ac044a143dc20ef);
+            
+    
+            var marker_a992da6b8dab10eacc0372d3dd2639d8 = L.marker(
+                [-30.1371, -51.09906],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_cfd78ce5664446fd12fca894c75ed7c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48313e60a6a9aecd144bd952f25e1a21 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_a6a6c54d093ac5bf6afea42e902b68b0 = $(`<div id="html_a6a6c54d093ac5bf6afea42e902b68b0" style="width: 100.0%; height: 100.0%;">     <h3>photo_77_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_77_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:11<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 3651 - Pitinga-RS,91796-101 NE     </div>`)[0];
+                popup_48313e60a6a9aecd144bd952f25e1a21.setContent(html_a6a6c54d093ac5bf6afea42e902b68b0);
+            
+        
+
+        marker_a992da6b8dab10eacc0372d3dd2639d8.bindPopup(popup_48313e60a6a9aecd144bd952f25e1a21)
+        ;
+
+        
+    
+    
+            marker_a992da6b8dab10eacc0372d3dd2639d8.bindTooltip(
+                `<div>
+                     photo_77_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a992da6b8dab10eacc0372d3dd2639d8.setIcon(icon_cfd78ce5664446fd12fca894c75ed7c4);
+            
+    
+            var marker_a99ad38daf2a67390a5a13e89b6901bf = L.marker(
+                [-30.13701, -51.09874],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_40ec78ecdf4543606c699f43db86e1b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8090cb9b90d0b272e22f11ae173f09be = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_b463cba03b6b05661115e45d142156e8 = $(`<div id="html_b463cba03b6b05661115e45d142156e8" style="width: 100.0%; height: 100.0%;">     <h3>photo_78_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_78_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:11<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 7415 - Lomba do Pinheiro -     </div>`)[0];
+                popup_8090cb9b90d0b272e22f11ae173f09be.setContent(html_b463cba03b6b05661115e45d142156e8);
+            
+        
+
+        marker_a99ad38daf2a67390a5a13e89b6901bf.bindPopup(popup_8090cb9b90d0b272e22f11ae173f09be)
+        ;
+
+        
+    
+    
+            marker_a99ad38daf2a67390a5a13e89b6901bf.bindTooltip(
+                `<div>
+                     photo_78_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a99ad38daf2a67390a5a13e89b6901bf.setIcon(icon_40ec78ecdf4543606c699f43db86e1b4);
+            
+    
+            var marker_3215109f60cd4b80c4fecfcbb6ae2b9a = L.marker(
+                [-30.13679, -51.09836],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_63de1eb443a13ac1f6c908eb5eed13e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e362b410243d396c950a9ea00647cf83 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_7245cd32aeca162c0735067fa702fca9 = $(`<div id="html_7245cd32aeca162c0735067fa702fca9" style="width: 100.0%; height: 100.0%;">     <h3>photo_79_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_79_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:11<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 3739 - Lomba do Pinheiro - RS,     </div>`)[0];
+                popup_e362b410243d396c950a9ea00647cf83.setContent(html_7245cd32aeca162c0735067fa702fca9);
+            
+        
+
+        marker_3215109f60cd4b80c4fecfcbb6ae2b9a.bindPopup(popup_e362b410243d396c950a9ea00647cf83)
+        ;
+
+        
+    
+    
+            marker_3215109f60cd4b80c4fecfcbb6ae2b9a.bindTooltip(
+                `<div>
+                     photo_79_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3215109f60cd4b80c4fecfcbb6ae2b9a.setIcon(icon_63de1eb443a13ac1f6c908eb5eed13e8);
+            
+    
+            var marker_ff17e8b3243ce5a96e86ee55fc65d683 = L.marker(
+                [-30.14307, -51.12756],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_2b5065750eb9a020980435dbbfdc180c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b43383e47b5ed815b4a1f3d276b71c15 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_1b6967ef51eeb720e0d5bc2277cf3da5 = $(`<div id="html_1b6967ef51eeb720e0d5bc2277cf3da5" style="width: 100.0%; height: 100.0%;">     <h3>photo_7_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_7_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:29<br><br>      <b>Endereço:</b><br>      Avenida Jodo Anténio Silveira, 3341 - Restinga - RS,     </div>`)[0];
+                popup_b43383e47b5ed815b4a1f3d276b71c15.setContent(html_1b6967ef51eeb720e0d5bc2277cf3da5);
+            
+        
+
+        marker_ff17e8b3243ce5a96e86ee55fc65d683.bindPopup(popup_b43383e47b5ed815b4a1f3d276b71c15)
+        ;
+
+        
+    
+    
+            marker_ff17e8b3243ce5a96e86ee55fc65d683.bindTooltip(
+                `<div>
+                     photo_7_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff17e8b3243ce5a96e86ee55fc65d683.setIcon(icon_2b5065750eb9a020980435dbbfdc180c);
+            
+    
+            var marker_2837c79f0936433d1bc8fef2d6eb6129 = L.marker(
+                [-30.13667, -51.09813],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_75027e117b4e76e4043652421fcb3fd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b604f9076375378e05e8a8205f4ecf3 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_7f24bdd5677b01f24245cdd6600e44ae = $(`<div id="html_7f24bdd5677b01f24245cdd6600e44ae" style="width: 100.0%; height: 100.0%;">     <h3>photo_80_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_80_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:10<br><br>      <b>Endereço:</b><br>      Estrada Jodo Antonio Da Silveira, 7500 - Lomba do Pinheiro -     </div>`)[0];
+                popup_5b604f9076375378e05e8a8205f4ecf3.setContent(html_7f24bdd5677b01f24245cdd6600e44ae);
+            
+        
+
+        marker_2837c79f0936433d1bc8fef2d6eb6129.bindPopup(popup_5b604f9076375378e05e8a8205f4ecf3)
+        ;
+
+        
+    
+    
+            marker_2837c79f0936433d1bc8fef2d6eb6129.bindTooltip(
+                `<div>
+                     photo_80_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2837c79f0936433d1bc8fef2d6eb6129.setIcon(icon_75027e117b4e76e4043652421fcb3fd1);
+            
+    
+            var marker_f8c515cd05ec60499865db20ac1582ba = L.marker(
+                [-30.13633, -51.0976],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_4d99845f9dd01496ae703148fe6f28ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5619e466a02ed48897f2a00b827bdc72 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_04ce968aeac233775d92f54fd5582109 = $(`<div id="html_04ce968aeac233775d92f54fd5582109" style="width: 100.0%; height: 100.0%;">     <h3>photo_81_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_81_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:10<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 7587 - Restinga - RS,     </div>`)[0];
+                popup_5619e466a02ed48897f2a00b827bdc72.setContent(html_04ce968aeac233775d92f54fd5582109);
+            
+        
+
+        marker_f8c515cd05ec60499865db20ac1582ba.bindPopup(popup_5619e466a02ed48897f2a00b827bdc72)
+        ;
+
+        
+    
+    
+            marker_f8c515cd05ec60499865db20ac1582ba.bindTooltip(
+                `<div>
+                     photo_81_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f8c515cd05ec60499865db20ac1582ba.setIcon(icon_4d99845f9dd01496ae703148fe6f28ed);
+            
+    
+            var marker_678c660dfa2f1dca0d45e3c904268ffc = L.marker(
+                [-30.13501, -51.09589],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_8ee5b35cd3ceb6e3264cf7ccd03f685d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01c176a78e1e600fc399e328b77cb7de = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_552b75ea1501620337e5cb8c9929afc3 = $(`<div id="html_552b75ea1501620337e5cb8c9929afc3" style="width: 100.0%; height: 100.0%;">     <h3>photo_82_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_82_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:09<br><br>      <b>Endereço:</b><br>      Joao Antonio Silveira Al 7626 - Lomba do Pinheiro - RS E     </div>`)[0];
+                popup_01c176a78e1e600fc399e328b77cb7de.setContent(html_552b75ea1501620337e5cb8c9929afc3);
+            
+        
+
+        marker_678c660dfa2f1dca0d45e3c904268ffc.bindPopup(popup_01c176a78e1e600fc399e328b77cb7de)
+        ;
+
+        
+    
+    
+            marker_678c660dfa2f1dca0d45e3c904268ffc.bindTooltip(
+                `<div>
+                     photo_82_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_678c660dfa2f1dca0d45e3c904268ffc.setIcon(icon_8ee5b35cd3ceb6e3264cf7ccd03f685d);
+            
+    
+            var marker_270e4acfc0fb201659d10b4ab00f7445 = L.marker(
+                [-30.13464, -51.0955],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_acf7612e802dd7152eedc0defef68b04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_598e1c88918317802e9293e83119dba8 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_96fb83a65c9ee5506b7946dcfa1ea6b6 = $(`<div id="html_96fb83a65c9ee5506b7946dcfa1ea6b6" style="width: 100.0%; height: 100.0%;">     <h3>photo_83_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_83_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:08<br><br>      <b>Endereço:</b><br>           </div>`)[0];
+                popup_598e1c88918317802e9293e83119dba8.setContent(html_96fb83a65c9ee5506b7946dcfa1ea6b6);
+            
+        
+
+        marker_270e4acfc0fb201659d10b4ab00f7445.bindPopup(popup_598e1c88918317802e9293e83119dba8)
+        ;
+
+        
+    
+    
+            marker_270e4acfc0fb201659d10b4ab00f7445.bindTooltip(
+                `<div>
+                     photo_83_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_270e4acfc0fb201659d10b4ab00f7445.setIcon(icon_acf7612e802dd7152eedc0defef68b04);
+            
+    
+            var marker_e4e7e972b7e099fe7e4a397e27502124 = L.marker(
+                [-30.14279, -51.12715],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_486bd25ca9f822507cbf38eae5753fef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8aa51a1604a408a7d6fc2b0f9abb6251 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_43feb2edd4ed5b4375ba6b753627d12a = $(`<div id="html_43feb2edd4ed5b4375ba6b753627d12a" style="width: 100.0%; height: 100.0%;">     <h3>photo_8_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_8_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:29<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 3365 - Restinga - RS,     </div>`)[0];
+                popup_8aa51a1604a408a7d6fc2b0f9abb6251.setContent(html_43feb2edd4ed5b4375ba6b753627d12a);
+            
+        
+
+        marker_e4e7e972b7e099fe7e4a397e27502124.bindPopup(popup_8aa51a1604a408a7d6fc2b0f9abb6251)
+        ;
+
+        
+    
+    
+            marker_e4e7e972b7e099fe7e4a397e27502124.bindTooltip(
+                `<div>
+                     photo_8_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e4e7e972b7e099fe7e4a397e27502124.setIcon(icon_486bd25ca9f822507cbf38eae5753fef);
+            
+    
+            var marker_8950742c45631c8ecf18fe28d110750e = L.marker(
+                [-30.14274, -51.12705],
+                {
+}
+            ).addTo(map_57bc3ad244235ff0060381a59d83a880);
+        
+    
+            var icon_75c9af0e3800f0d7cfef3c58963796a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aef0c6391e61a2a478d1e92254d88699 = L.popup({
+  "maxWidth": 420,
+});
+
+        
+            
+                var html_9e5444291ce1b2e825c3a5b1c5858f82 = $(`<div id="html_9e5444291ce1b2e825c3a5b1c5858f82" style="width: 100.0%; height: 100.0%;">     <h3>photo_9_2026-08-08_22-47-10.jpg</h3>      <img src="../fotos/photo_9_2026-08-08_22-47-10.jpg" width="350"><br><br>      <b>Data:</b> 08.05.2026<br>      <b>Hora:</b> 11:28<br><br>      <b>Endereço:</b><br>      Estr. Jodo Anténio da Silveira, 3956 - Lomba do Pinheiro -     </div>`)[0];
+                popup_aef0c6391e61a2a478d1e92254d88699.setContent(html_9e5444291ce1b2e825c3a5b1c5858f82);
+            
+        
+
+        marker_8950742c45631c8ecf18fe28d110750e.bindPopup(popup_aef0c6391e61a2a478d1e92254d88699)
+        ;
+
+        
+    
+    
+            marker_8950742c45631c8ecf18fe28d110750e.bindTooltip(
+                `<div>
+                     photo_9_2026-08-08_22-47-10.jpg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8950742c45631c8ecf18fe28d110750e.setIcon(icon_75c9af0e3800f0d7cfef3c58963796a9);
+            
+</script>
+</html>
